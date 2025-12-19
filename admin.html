@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="images/favicon_io 2/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>Admin page</title>
+  </head>
+  <body>
+    <header class="header__container-content">
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html" target="_self" title="Truck">
+            <img
+            src="images/LOGO-LOVE.png"
+              loading="lazy"
+              alt="logo"
+              class="logo"
+            />
+          </a>
+        </div>
+        <ul class="links">
+          <li>
+            <a
+              href="ourStory.html"
+              class="navbar__links"
+              target="_self"
+              title="About Us"
+              >Наша Iсторiя</a
+            >
+          </li>
+          <li>
+            <a
+              href="ourMemorise.html"
+              class="navbar__links"
+              target="_self"
+              title="Contact Us"
+              >Нашi спогади</a
+            >
+          </li>
+          <li class="links__signInSetts">
+            <a
+              id="adminBtn"
+              class="navbar__links"
+              target="_self"
+              title="Admin"
+              ><img src="images/loginIcon.webp" loading="lazy" alt="LogIn"
+            /></a>
+          </li>
+        </ul>
+        <div class="toggle">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="admin__main">
+        <div id="clientsContainer" class="admin__main-user"></div>
+      </section>
+      <button id="scrollTopBtn" title="Top">
+        <img src="images/top.webp" alt="top" class="topImg" />
+      </button>
+    </main>
+    <footer class="footer">
+      <div class="container footer-position">
+        <div>
+          <h4>Хочу завжди бачити твою посмішку</h4>
+          <p>
+            Тому завжди заповнюй ваучер коли хочеш разом відвідати якесь місце
+            чи побачити щось нове.
+          </p>
+        </div>
+        <div class="footer-position-nav">
+          <div class="footer__block-nav-items">
+            <h3>Ресторани Едмонтона</h3>
+            <a
+              href="https://www.opentable.ca/s?covers=2&latitude=53.5391305&longitude=-113.4987516&title=Top%20Restaurants%20in%20Edmonton&ref=16282&SP=ppc_g_ca_nontm&cmid=22832620510&aid=183792336416&tid=kwd-301682547986&locp=9001365&loci=&mt=b&nw=g&d=c&cid=767375618606&pos=&gad_source=1&gad_campaignid=22832620510&gbraid=0AAAAADqtrPqXvhz52E7thMMNALKUC1vij&gclid=Cj0KCQiA6Y7KBhCkARIsAOxhqtP-cCf6x3h9wunZFyAaUBI9hwEAVCS_YtmzITurQr_x0XLDvX0mDDcaApj-EALw_wcB"
+              target="_blank"
+              rel="nofollow"
+              title="Github"
+              >Побачити</a
+            >
+          </div>
+          <div class="footer__block-nav-items">
+            <h3>Парки Едмонтона</h3>
+            <a
+              href="https://www.tripadvisor.ru/Attractions-g154914-Activities-c57-Edmonton_Alberta.html"
+              target="_blank"
+              rel="nofollow"
+              title="LinkedIn"
+              >Побачити</a
+            >
+          </div>
+          <div class="footer__block-nav-items">
+            <h3>Активності Едмонтона</h3>
+            <a
+              href="https://www.getyourguide.ru/edmonton-l291/outdoor-activities-tc1093/?visitor-id=Z9B60OZEQOLZGU8JGK219MRBBJJAEGZO&locale_autoredirect_optout=true"
+              target="_blank"
+              rel="nofollow"
+              title="Mu stack"
+              >Побачити</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="footer-position-certification container">
+        Створено з любов’ю
+      </div>
+    </footer>
+
+    <div id="confirmModal" class="modal">
+      <div class="modal-content">
+        <p>Are you sure you want to delete this client?</p>
+        <div class="modal-buttons">
+          <button id="confirmYes" class="btn btn-danger">Yes</button>
+          <button id="confirmNo" class="btn">No</button>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
